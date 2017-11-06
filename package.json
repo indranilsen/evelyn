@@ -1,0 +1,22 @@
+{
+  "name": "event-manager",
+  "version": "1.0.0",
+  "description": "A service that stores and manages real-time events from several services and intefaced by a public API.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "event",
+    "manager",
+    "service"
+  ],
+  "author": "Indranil Sen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "uuid": "^3.1.0"
+  }
+}
