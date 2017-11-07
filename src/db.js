@@ -8,7 +8,7 @@ delete require('pg').native;
 const sequelizeDefaults = {
     dialect: 'postgres',
     database: 'postgres',
-    schema: 'events',
+    schema: 'Events',
     define: {
         timestamps: true,
         paranoid: false,

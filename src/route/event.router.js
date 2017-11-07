@@ -3,23 +3,23 @@
 const _ = require('lodash');
 const router = require('express').Router();
 
-router.post('/event', (req, res) => {
+router.post('/', (req, res) => {
 
 });
 
-router.get('/event/', (req, res) => {
+router.get('/', (req, res) => {
 
 });
 
-router.get('/event/:id', (req, res) => {
+router.get('/:id', (req, res) => {
 
 });
 
-router.put('/event/:id', (req, res) => {
+router.put('/:id', (req, res) => {
 
 });
 
-router.delete('/event/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
 
 });
 

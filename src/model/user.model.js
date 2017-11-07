@@ -23,13 +23,6 @@ const UserModel = DB.sequelize.define('User', {
         allowNull: true,
         unique: false,
     },
-
-    data: {
-        type: DB.Sequelize.JSONB,
-        allowNull: false,
-        defaultValue: {},
-        unique: false
-    },
 }, {
     hooks: {
         beforeValidate: (user) => {

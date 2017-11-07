@@ -4,7 +4,7 @@
         "host": "db",
         "port": 5432,
         "database": "postgres",
-        "schema": "events",
+        "schema": "Events",
         "username": "postgres",
         "password": "postgres"
     }

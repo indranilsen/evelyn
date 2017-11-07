@@ -12,15 +12,13 @@ const config = require('nconf')
 const DB = require('./db.js');
 const port = config.get('port');
 
-const app = express();
-
-app.use(bodyParser.json());
-
-app.use('/api', require('./route/routes.js'));
-
 DB.initialize(config.get('db'))
     .then(() => {
+        const app = express();
+        app.use(bodyParser.json());
+        app.use('/api', require('./route/routes.js'));
+
         app.listen(port, () => {
-            console.log('Listening on port: ', port);
+            console.log('Listening on port:', port);
         });
     });
