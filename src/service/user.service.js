@@ -30,7 +30,7 @@ const UserService = {
                     return { id: userId, name, description };
                 }
 
-                throw new Error(`Could not find user with ID ${userId}`);
+                throw new Error(`User with ID ${userId} does not exist`);
             });
     },
 
@@ -38,6 +38,9 @@ const UserService = {
         return UserRepository.get(userId)
             .then((record) => {
                 return makePresentable(record);
+            })
+            .catch(() => {
+                throw new Error(`User with ID ${userId} does not exist`);
             });
     },
 
@@ -47,7 +50,7 @@ const UserService = {
                 return _.map(record, makePresentable);
             })
             .catch(() => {
-                throw new Error(`Could not get list of user`);
+                throw new Error(`Could not get list of users`);
             });
     },
 

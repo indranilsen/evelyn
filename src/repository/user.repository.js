@@ -24,7 +24,7 @@ const UserRepository = {
 
     get: (id) => {
         return UserModel.findOne({
-            where: { id },
+            where: { id }
         });
     },
 
