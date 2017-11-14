@@ -3,13 +3,11 @@ const ReactRouter = require('react-router-dom');
 const Router = ReactRouter.BrowserRouter;
 const Route = ReactRouter.Route;
 
-const NavigationBar = require('../navigation-bar/navigation-bar.jsx');
-
-require('./home.css');
+const NavigationBar = require('./navigation-bar/navigation-bar.jsx');
 
 const NavigationItems = [
     {
-        "text": "Home",
+        "text": "Main",
         "url": "/",
         "icon": "home"
     },
@@ -23,7 +21,7 @@ const NavigationItems = [
     }
 ];
 
-class Home extends React.Component {
+class Navigation extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -35,4 +33,4 @@ class Home extends React.Component {
     }
 }
 
-module.exports = Home;
+module.exports = Navigation;

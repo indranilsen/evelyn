@@ -1,14 +1,14 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 
-const Home = require('./components/home/home.jsx');
+const Main = require('./components/main/main.jsx');
 
 require('./index.css');
 
 class App extends React.Component {
     render() {
         return (
-            <Home/>
+            <Main/>
         );
     }
 }
