@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif;
+}
+
+li:focus,
+p:focus,
+div:focus,
+img:focus,
+span:focus{
+    outline:none !important;
+    border: 0;
+}
