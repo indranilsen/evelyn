@@ -10,16 +10,29 @@ class NavigationItem extends React.Component {
     }
 
     createLink() {
+        const path = `${this.props.url}`;
+        let linkContent = this.props.text;
+
         if (this.props.icon) {
             const iconClass = `fa fa-${this.props.icon} fa-lg`;
-            return (
-                <a href={this.props.url}><i className={iconClass} aria-hidden="true"/></a>
-            );
+            linkContent = <i className={iconClass} aria-hidden="true"/>;
         }
 
-        return (
-            <a href={this.props.url}>{this.props.text}</a>
+        let link = (
+            <NavLink activeClassName='active-item' to={path}>
+                {linkContent}
+            </NavLink>
         );
+
+        if (this.props.url === '/') {
+            link = (
+                <NavLink exact activeClassName='active-item' to={path}>
+                    {linkContent}
+                </NavLink>
+            )
+        }
+
+        return link;
     }
 
     render() {
