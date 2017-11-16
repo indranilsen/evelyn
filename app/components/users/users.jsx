@@ -1,5 +1,9 @@
 const React = require('react');
 
+const UserForm = require('./user-form/user-form.jsx');
+
+require('./user.css');
+
 class Users extends React.Component {
     constructor(props) {
         super(props);
@@ -7,7 +11,10 @@ class Users extends React.Component {
 
     render() {
         return (
-            <div>Users</div>
+            <ul className='user-container'>
+                <li><UserForm></UserForm></li>
+                <li><UserForm></UserForm></li>
+            </ul>
         );
     }
 }

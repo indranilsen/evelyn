@@ -1,6 +1,11 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif;
+    height: 100%;
 }
 
 li:focus,
@@ -10,4 +15,8 @@ img:focus,
 span:focus{
     outline:none !important;
     border: 0;
+}
+
+#app {
+    height: 100%;
 }

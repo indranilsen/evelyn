@@ -1,0 +1,65 @@
+.user-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.user-form > form {
+    min-width: 350px;
+    width: auto;
+    color: #717171;
+    border: 0;
+}
+
+.user-form > form > div > fieldset {
+    border: 0;
+    padding: 0;
+}
+
+.user-form > form .form-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user-form > form .form-group > .control-label {
+    padding: 0.5em 0 0.2em 0;
+    font-size: 1.2em;
+}
+
+.user-form > form .form-group > input[type="text"], textarea {
+    transition: all 0.30s ease-in-out;
+    font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    padding: 0.8em;
+    background: white;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    color: #717171;
+    outline: none !important;
+}
+
+.user-form > form .form-group > input[type="text"]:focus, textarea:focus {
+    box-shadow: 0 0 5px #09BCFF;
+    border: 1px solid #09BCFF;
+}
+
+.user-form > form > p > button {
+    transition: all 0.10s ease-in-out;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+    font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    background: #09BCFF;
+    border-bottom: 2px solid #08B2FF;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+}
+
+.user-form > form > p > button:hover {
+    background: #08B2FF;
+    cursor: pointer;
+}
