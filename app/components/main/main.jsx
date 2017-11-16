@@ -9,6 +9,7 @@ const Navigation = require('../navigation/navigation.jsx');
 const Home = require('../home/home.jsx');
 const Users = require('../users/users.jsx');
 const Events = require('../events/events.jsx');
+const NotFound = require('../not-found/not-found.jsx');
 
 require('./main.css');
 
@@ -26,6 +27,7 @@ class Main extends React.Component {
                         <Route exact path='/' component={Home}/>
                         <Route path='/users' component={Users}/>
                         <Route path='/events' component={Events}/>
+                        <Route component={NotFound}/>
                     </Switch>
                 </div>
             </Router>

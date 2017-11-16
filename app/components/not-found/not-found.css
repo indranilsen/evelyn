@@ -1,0 +1,42 @@
+.not-found-container {
+    width: 100%;
+    padding-top: 4em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #717171;
+}
+
+.not-found-icon {
+    font-size: 15em;
+}
+
+.not-found-error-code {
+    font-size: 2.5em;
+    margin: 0;
+    padding-top: 0.5em;
+}
+
+.not-found-error-code-message {
+    font-size: 1.2em;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.not-found-main-message {
+    font-size: 1.2em;
+    margin: 0;
+    padding-bottom: 0.5em;
+}
+
+.not-found-redirect-message {
+    font-size: 1.1em;
+}
+
+.not-found-redirect-message:visited {
+    color: #09BCFF;
+}
