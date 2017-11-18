@@ -1,0 +1,31 @@
+.user-list-item-cont {
+    padding-bottom: 0.3em;
+}
+
+.user-list-item-cont .user-list-item {
+    margin: 0;
+    padding: 0.4em;
+    list-style: none;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 3px #888;
+    box-sizing: border-box;
+    border-left: 2px solid #09BCFF;
+}
+
+.user-list-item-cont .user-list-item > li {
+    padding-bottom: 0.2em;
+    color: #717171;
+}
+
+.user-list-item-cont .user-list-item > li:first-child {
+    color: #575757;
+    font-size: 1.1em;
+}
+
+.user-list-item-cont .user-list-item > li:last-child {
+    padding: 0 0 0 0.5em;
+    font-size: 0.9em;
+}

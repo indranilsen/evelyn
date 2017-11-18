@@ -2,6 +2,7 @@ const React = require('react');
 
 const UserForm = require('./user-form/user-form.jsx');
 const UserList = require('./user-list/user-list.jsx');
+const UserListItems = require('./user-list-items/user-list-items.jsx');
 const createFilter = require('./user-list/util.js').createFilter;
 
 require('./user.css');
@@ -47,22 +48,14 @@ class Users extends React.Component {
 
     render() {
         const filteredEmails = users.filter(
-            createFilter(this.state.searchString, keys, {caseSensitive: false})
+            createFilter(this.state.searchString, keys, { caseSensitive: false })
         );
         return (
             <ul className='user-container'>
                 <li><UserForm/></li>
                 <li>
                     <UserList className='search-input' onChange={this.searchUpdated} />
-                    {filteredEmails.map((users, index) => {
-                        return (
-                            <div style={{paddingBottom: 1 + 'em'}} key={index}>
-                                <div style={{color: 'red'}}>  Id: {users.id}</div>
-                                <div>Name: {users.name}</div>
-                                <div>Desc: {users.description}</div>
-                            </div>
-                        )
-                    })}
+                    <UserListItems data={filteredEmails}/>
                 </li>
             </ul>
         );

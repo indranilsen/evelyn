@@ -1,0 +1,23 @@
+.search-input {
+    align-self: center;
+    padding-bottom: 1em;
+}
+
+.search-input input[type="search"] {
+    transition: all 0.30s ease-in-out;
+    font-family: HelveticaNeue-Light, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    padding: 0.7em;
+    box-sizing: border-box;
+    color: #717171;
+    outline: none !important;
+    border: 2px solid #CCC;
+    border-width: 0 0 2px;
+    background-color: white;
+
+}
+
+.search-input input[type="search"]:focus {
+    border: 2px solid #09BCFF;
+    border-width: 0 0 2px;
+}

@@ -1,0 +1,8 @@
+.user-list {
+    margin: 0;
+    padding: 1em;
+    list-style: none;
+    height: 90%;
+    overflow:hidden;
+    overflow-y:scroll;
+}

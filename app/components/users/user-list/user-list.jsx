@@ -1,6 +1,8 @@
 const React = require('react');
 const Util = require('./util.js');
 
+require('./user-list.css');
+
 class UserList extends React.Component {
     constructor(props) {
         super(props);
